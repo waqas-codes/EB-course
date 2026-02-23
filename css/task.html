@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task</title>
+    <style>
+
+        li {
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 18px;
+            transition: all 0.3s ease; 
+        }
+
+        
+        li:nth-child(2) {
+            background-color: lightblue;
+        }
+
+        li:nth-child(4) {
+            background-color: lightgreen;
+            font-size: 22px;
+        }
+
+        li:hover {
+            background-color: orange;
+        }
+
+        li::before {
+            content: "⭐ ";
+        }
+
+        li::after {
+            content: "✓";
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Waqas</h2>
+
+    <ul>
+        <li>HTML Practice</li>
+        <li>CSS Styling</li>
+        <li>JavaScript Basics</li>
+        <li>React Learning</li>
+        <li>Node.js Practice</li>
+    </ul>
+
+</body>
+</html>
