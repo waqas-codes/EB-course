@@ -22,5 +22,7 @@
 // const idName = document.getElementById("para")
 // console.log(idName.innerHTML)
 
-const byQuery = document.querySelector(".para")
+const byQuery = document.querySelector("#para")
 console.log(byQuery.innerHTML)
+
+// const 
