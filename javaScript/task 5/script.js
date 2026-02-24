@@ -16,6 +16,8 @@
 // const heading = document.getElementsByTagName("h1")
 // console.log(heading[0])
 
-const className = document.getElementsByClassName("para")
-console.log(className[0].innerHTML)
+// const className = document.getElementsByClassName("para")
+// console.log(className[0].innerHTML)
 
+const idName = document.getElementById("para")
+console.log(idName.innerHTML)
