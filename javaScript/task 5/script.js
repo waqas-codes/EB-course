@@ -25,4 +25,5 @@
 // const byQuery = document.querySelector("#para")
 // console.log(byQuery.innerHTML)
 
-const byQueryAll = document.querySelectorAll
+const byQueryAll = document.querySelectorAll(".para")
+console.log(byQueryAll)
