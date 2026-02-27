@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #1b1a1a;
+    color: #fff;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    gap: 5px;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/* navabar */
+nav ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+ul li a:hover{
+    color: rgb(185, 185, 185);
+}
+
+/* button design */
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button, .home button{
+    padding: 24px 40px;
+    font-weight: bolder;
+    border: none;
+}
+.login-button{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.get-started-button{
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.get-started-button:hover{
+    background-color: rgb(185, 185, 185);
+
+}
+
+/* home section */
+.home{
+    background-image: url('./backgroundImage');
+    object-fit: cover;
+    height: 180vh;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.home h3{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.home h1{
+    font-size: 58px;
+    font-weight: bolder;
+    text-align: center;
+    width: 40%;
+}
+
+.home nav ul{
+    background-color: #333;
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+.home nav ul li a{
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+.home nav ul li a:hover{
+    background-color: rgb(73, 73, 73);
+    border-radius: 30px;
+}
+
+/* ceramix */
+.ceramix{
+    background-image: url('./backgroundImage');
+    object-fit: cover;
+    width: 70%;
+    height: 80vh;
+    border-radius: 15px;
+    border: 10px solid black;
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4b3c34;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid white;
+}
+.header nav, .header nav ul {
+    gap: 10px;
+    background-color: transparent;
+}
+.header nav ul li a {
+    font-size: small;
+    font-weight: 100;
+}
+/* ceramix home */
+.ceramix-home{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.ceramix-home h3{
+    font-size: 32px;
+    font-weight: 100;
+}
+.ceramix-home form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ceramix-home form input{
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 300px;
+}
+.ceramix-home form button{
+    width: 100px;
+    padding: 15px;
+    color: #4b3c34;
+}
+
+/* media query for mobile devices */
+@media screen and (max-width: 678px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+
+    .home h1{
+        font-size: 42px;
+        width: 80%;
+        padding: 3px 5px;
+    }
+    .home nav a{
+        font-size: small;
+    }
+    
+}
