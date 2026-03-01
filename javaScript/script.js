@@ -3,9 +3,9 @@ console.log('this is my first class')
 // console.log(Name)
 // 
 // alert("welcome to my first class")
-// document.write("welcome to my first class")
-// const name = prompt("what is your name")
-// console.log(name)
+document.write("welcome to my first class")
+const name = prompt("what is your name")
+console.log(name)
 
 let marks = prompt("what is your marks")
 
