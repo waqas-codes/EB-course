@@ -7,18 +7,18 @@ const persons =
     connection: 381
 }
 let table = "<table>" +
-    "<tr>" + 
-    "<th>" + "Name" + "</th>" +
-    "<th>" + "Job Title" + "</th>" +
-    "<th>" + "Description" + "</th>" +
-    "<th>" + "Connection" + "</th>" +
+    "<tr>" +
+    "<th style='border: 1px solid black; padding: 8px; background-color: gray'>" + "Name" + "</th>" +
+    "<th style='border: 1px solid black; padding: 8px; background-color: gray'>" + "Job Title" + "</th>" +
+    "<th style='border: 1px solid black; padding: 8px; background-color: gray'>" + "Description" + "</th>" +
+    "<th style='border: 1px solid black; padding: 8px; background-color: gray'>" + "Connection" + "</th>" +
     "</tr>" +
 
     "<tr>" +
-    "<td>" +  + "</td>" +
-    "<td>" + "Jonior fulls stack web engineer" + "</td>" +
-    "<td>" + "Tupelo, Mississippi, United States" + "</td>" +
-    "<td>" + "381" + "</td>" +
+    "<td style='border: 1px solid black; padding: 8px; background-color: yellow'>" + persons.name + "</td>" +
+    "<td style='border: 1px solid black; padding: 8px; background-color: yellow'>" + persons.jobTitle + "</td>" +
+    "<td style='border: 1px solid black; padding: 8px; background-color: yellow'>" + persons.description + "</td>" +
+    "<td style='border: 1px solid black; padding: 8px; background-color: yellow'>" + persons.connection + "</td>" +
     "</tr>" +
     "</table>"
 
