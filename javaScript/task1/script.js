@@ -15,7 +15,7 @@ let table = "<table>" +
     "</tr>" +
 
     "<tr>" +
-    "<td>" + "ibrahim" + "</td>" +
+    "<td>" +  + "</td>" +
     "<td>" + "Jonior fulls stack web engineer" + "</td>" +
     "<td>" + "Tupelo, Mississippi, United States" + "</td>" +
     "<td>" + "381" + "</td>" +
