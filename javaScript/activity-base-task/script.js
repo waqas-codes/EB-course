@@ -38,15 +38,29 @@
 
 
 // ******************************
-// guess a number with Math.random() method
+// guess a number with Math.random() method using while loop
 
+// let randomNumber = Math.floor(Math.random() * 10) + 1;
+// let userGuess = Number(prompt("Guess a number between 1 and 10"));
+
+// console.log(randomNumber)
+
+// while (userGuess !== randomNumber) {
+//     userGuess = Number(prompt("Wrong guess! Try again. Guess a number between 1 and 10"));
+//     console.log("guess number is incorrect")
+// }
+// console.log("Congratulations! You guessed the number.");
+
+
+// *************************************
+// guess a number with Math.random method using do whlile loop
 let randomNumber = Math.floor(Math.random() * 10) + 1;
-let userGuess = Number(prompt("Guess a number between 1 and 10"));
-
 console.log(randomNumber)
+let userguess;
 
-while (userGuess !== randomNumber) {
-    userGuess = Number(prompt("Wrong guess! Try again. Guess a number between 1 and 10"));
-    console.log("guess number is incorrect")
-}
+do {
+    userguess = Number(prompt("Guess a number between 1 and 10"));
+
+}while (userguess !== randomNumber);
+
 console.log("Congratulations! You guessed the number.");
