@@ -69,15 +69,15 @@
 // ****************************************
 // checking a number is positive or negative 
 
-let num = Number(prompt("Enter a number"));
-if (num % 2 === 0) {
-    console.log("The number is even");
-} else {    
-    console.log("The number is odd");
-}
-
-// for (let i = 0; i <= 10; i++) {
-//     if (i % 2 === 0) {
-//         console.log(i)
-//     }
+// let num = Number(prompt("Enter a number"));
+// if (num % 2 === 0) {
+//     console.log("The number is even");
+// } else {    
+//     console.log("The number is odd");
 // }
+
+for (let i = 0; i <= 10; i++) {
+    if (i % 2 === 0) {
+        console.log(i)
+    }
+}
