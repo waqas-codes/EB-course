@@ -54,13 +54,24 @@
 
 // *************************************
 // guess a number with Math.random method using do whlile loop
-let randomNumber = Math.floor(Math.random() * 10) + 1;
-console.log(randomNumber)
-let userguess;
+// let randomNumber = Math.floor(Math.random() * 10) + 1;
+// console.log(randomNumber)
+// let userguess;
 
-do {
-    userguess = Number(prompt("Guess a number between 1 and 10"));
+// do {
+//     userguess = Number(prompt("Guess a number between 1 and 10"));
 
-}while (userguess !== randomNumber);
+// }while (userguess !== randomNumber);
 
-console.log("Congratulations! You guessed the number.");
+// console.log("Congratulations! You guessed the number.");
+
+
+// ****************************************
+// checking a number is positive or negative 
+
+let num = Number(prompt("Enter a number"));
+if (num % 2 === 0) {
+    console.log("The number is even");
+} else {    
+    console.log("The number is odd");
+}
