@@ -29,9 +29,24 @@
 
 // ****************************
 // break keyword is used to exit a loop.
-for (let i = 0; i < 10; i++) {
-    if (i === 5) {
-        break;
-    }
-    console.log(i);
+// for (let i = 0; i < 10; i++) {
+//     if (i === 5) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+
+// ******************************
+// guess a number with Math.random() method
+
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+let userGuess = Number(prompt("Guess a number between 1 and 10"));
+
+console.log(randomNumber)
+
+while (userGuess !== randomNumber) {
+    userGuess = Number(prompt("Wrong guess! Try again. Guess a number between 1 and 10"));
+    console.log("guess number is incorrect")
 }
+console.log("Congratulations! You guessed the number.");
