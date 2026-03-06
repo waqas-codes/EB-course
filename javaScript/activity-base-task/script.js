@@ -16,9 +16,22 @@
 
 // console.log("The number is divisible by 5!")
 
+
+// *************************
+//continue keyword is used to skip the current iteration of a loop and move on to the next iteration. In the example below, when the value of i is 5, the continue statement will be executed, and the console.log(i) will be skipped for that iteration. The loop will then continue with the next value of i.
+// for (let i = 0; i < 10; i++) {
+//     if (i === 5) {
+//         continue;
+//     }
+//     console.log(i)
+// }
+
+
+// ****************************
+// break keyword is used to exit a loop.
 for (let i = 0; i < 10; i++) {
     if (i === 5) {
-        continue;
+        break;
     }
-    console.log(i)
+    console.log(i);
 }
