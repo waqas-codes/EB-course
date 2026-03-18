@@ -7,8 +7,11 @@
 // const pageUrl = document.URL
 // console.log(pageUrl)
 
-const head = document.head 
-console.log(head.innerHTML)
+// const head = document.head 
+// console.log(head.innerHTML)
+
+const links = document.links
+console.log(links)
 
 // const heading = document.getElementsByTagName("h1")
 // console.log(heading[0])
