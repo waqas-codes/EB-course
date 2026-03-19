@@ -19,5 +19,8 @@
 // const className = document.getElementsByClassName("para")
 // console.log(className[0].innerHTML)
 
-const idName = document.getElementById("para")
-console.log(idName.innerHTML)
+// const idName = document.getElementById("para")
+// console.log(idName.innerHTML)
+
+const byQuery = document.querySelector(".para")
+console.log(byQuery.innerHTML)
