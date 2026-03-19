@@ -10,9 +10,12 @@
 // const head = document.head 
 // console.log(head.innerHTML)
 
-const links = document.links
-console.log(links)
+// const links = document.links
+// console.log(links)
 
 // const heading = document.getElementsByTagName("h1")
 // console.log(heading[0])
+
+const className = document.getElementsByClassName("para")
+console.log(className[0].innerHTML)
 
