@@ -14,5 +14,5 @@ btn1.addEventListener("click", () => {
 })
 
 btn2.addEventListener("click", () => {
-    ol[0].removeChild(lis)
+    
 })
