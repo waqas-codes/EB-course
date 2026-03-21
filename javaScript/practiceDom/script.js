@@ -11,7 +11,10 @@ createDiv.setAttributeNode(createAtt)
 for(let i = 0; i < 4; i++){  
 const createChildDiv = document.createElement("div")
 const createChildAt = document.createAttribute("box")
-createChildDiv.style.backgroundColor = "yellow"
+if(i == 0) createChildDiv.style.backgroundColor = "yellow"
+if(i == 1) createChildDiv.style.backgroundColor = "red"
+if(i == 2) createChildDiv.style.backgroundColor = "aqua"
+if(i == 3) createChildDiv.style.backgroundColor = "gray"
 createChildDiv.style.border = "1px solid black"
 createChildDiv.style.height = "100px"
 createChildDiv.style.width = "100px"
