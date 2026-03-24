@@ -1,6 +1,27 @@
 const createDiv = document.createElement("div")
 const createAtt = document.createAttribute("id")
-createAtt.
-con
+createAtt.value = "box"
+createDiv.style.backgroundColor = "green"
+createDiv.style.width = "200px"
+createDiv.style.height = "200px"
+createDiv.style.display = "grid"
+createDiv.style.gridTemplateColumns = "auto auto"
+createDiv.setAttributeNode(createAtt)
+
+for(let i = 0; i < 4; i++){  
+const createChildDiv = document.createElement("div")
+const createChildAt = document.createAttribute("box")
+createChildDiv.style.backgroundColor = "yellow"
+createChildDiv.style.border = "1px solid black"
+createChildDiv.style.height = "100px"
+createChildDiv.style.width = "100px"
+createChildDiv.setAttributeNode(createChildAt)
+createDiv.appendChild(createChildDiv)
+}
+
 const bodyTag = document.getElementsByTagName("body")
-bodyTag[0].appendChild(createDiv)
+bodyTag[0].appendChild(createDiv) 
+bodyTag[0].style.height = "100vh"
+bodyTag[0].style.display = "flex"
+bodyTag[0].style.justifyContent = "center"
+bodyTag[0].style.alignItems = "center"
