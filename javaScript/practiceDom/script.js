@@ -34,28 +34,39 @@ bodyTag[0].style.display = "flex"
 bodyTag[0].style.justifyContent = "center"
 bodyTag[0].style.backgroundColor = "black"
 bodyTag[0].style.alignItems = "center"
-const parentNode = document.createElement("div")
-parentNode.style.position = "relative"
-parentNode.style.width = "400px"
-parentNode.style.height = "400px"
-parentNode.style.display = "flex"
-parentNode.style.justifyContent = "center"
-parentNode.style.alignItems = "center"
+const container = document.createElement("div")
+// container.style.position = "relative"    
+container.style.width = "400px"
+container.style.height = "400px"
+container.style.backgroundColor = "white"
+container.style.display = "flex"
+container.style.justifyContent = "center"
+container.style.alignItems = "center"
 
-bodyTag[0].appendChild(parentNode)
+bodyTag[0].appendChild(container)
 const angles = [45, 90, 135, 180]
-const colors = ["red", "green", "blue", "yellow"]
+const colors = ["red", "green", "blue", "gray"]
 
-for(let i = 0; i < 4; i++){
+for (let i = 0; i < 4; i++) {
     const childNodes = document.createElement("div")
+    const parentNodes = document.createElement("div")
+
+    parentNodes.style.width = "200px"
+    parentNodes.style.height = "0.3px"
+    parentNodes.style.backgroundColor = "blue"
+    parentNodes.style.transform = `rotate(${angles[i]}deg)`
+    parentNodes.style.backgroundColor = `${colors[i]}`
+    parentNodes.style.position = "absolute"
+    parentNodes.style.display = "flex"
+    parentNodes.style.alignItems = "center"
+    container.appendChild(parentNodes)
+
     childNodes.style.width = "10px"
     childNodes.style.position = "absolute"
     childNodes.style.height = "10px"
     childNodes.style.borderRadius = "50%"
     childNodes.style.backgroundColor = `${colors[i]}`
-    childNodes.style.transform = `rotate(${angles[i]}deg)`
-    childNodes.style.transition = "width 1s"
-    childNodes.style.transitionTimingFunction = "linear"
-    childNodes
-    parentNode.appendChild(childNodes)
+    childNodes.style.animation = "move 2s linear infinite"
+
+    parentNodes.appendChild(childNodes)
 }
