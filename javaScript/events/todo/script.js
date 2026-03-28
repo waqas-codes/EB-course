@@ -6,7 +6,7 @@ function addTodo() {
     const value = todo.value
     const li = document.createElement("li")
     li.innerHTML = value
-    ol.appendChild(li)
+    value ? ol.appendChild(li) && (todo.value = "") : alert("please enter any value")
 }
 
 todo.addEventListener("keypress", (event) => {
@@ -17,3 +17,7 @@ todo.addEventListener("keypress", (event) => {
 btn1.addEventListener("click", () => {
     addTodo()
 })
+
+let array = [1,2,3,4,5]
+let newArray = [...array, array]
+console.log(newArray)
