@@ -1,21 +1,19 @@
-console.log("9")
-console.log("1")
-console.log("2")
-console.log("3")
-console.log("4")
-console.log("5")
-add()
-console.log("6")
-console.log("7")
-console.log("8")
+const table = document.getElementById("table")
 
-// async function add(){
-//     let end_point = await fetch("https://jsonplaceholder.typicode.com/users")
-//     let data = await end_point.json()
-//     console.log(data)
-// }
 
 async function add(){
     let end_point = await fetch("https://jsonplaceholder.typicode.com/users")
-    console.log(end_point)
+    let data = await end_point.json()
+    // console.log(data)
+
+
+    for(let i = 0; i < data.length; i++){
+        const tr = document.createElement("tr")
+        const td = document.createElement("td")
+        table.appendChild(tr)
+        td.innerHTML = data[i].id
+        tr.appendChild(td)
+    }
 }
+
+add()
