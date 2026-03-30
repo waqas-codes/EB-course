@@ -9,9 +9,13 @@ console.log("6")
 console.log("7")
 console.log("8")
 
+// async function add(){
+//     let end_point = await fetch("https://jsonplaceholder.typicode.com/users")
+//     let data = await end_point.json()
+//     console.log(data)
+// }
+
 async function add(){
     let end_point = await fetch("https://jsonplaceholder.typicode.com/users")
-    let data = await end_point.json()
-    console.log(data)
+    console.log(end_point)
 }
-
