@@ -9,16 +9,16 @@
 // }
 
 
-// let arr = ["apple", "banana", "mango"]
-// arr.forEach(Element => {
-//     console.log(Element)
-// })
-
-
 let arr = ["apple", "banana", "mango"]
-for(let i = arr.length -1 ; i >= 0; i--){
-    console.log(arr[i])
-}
+arr.forEach(Element => {
+    console.log(Element)
+})
+
+
+// let arr = ["apple", "banana", "mango"]
+// for(let i = arr.length -1 ; i >= 0; i--){
+//     console.log(arr[i])
+// }
 
 
 // let arr = [1, 5, 8, 19, 3, 66, 29]
