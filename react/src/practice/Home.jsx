@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Home = () => {
-    const [color, setColor] = useState("blue")
+    const [color, setColor] = useState("gray")
     return (
         <div style={{ width: "100vw", height: "100vh", backgroundColor: `${color}`, display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div style={{ position: "absolute", bottom: "70px", padding: "20px 40px", display: "flex", justifyContent: "center", alignItems: "center", gap: "5px", borderRadius: "30px", backgroundColor: "black" }}
