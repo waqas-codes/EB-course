@@ -6,19 +6,30 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-try {
-    mongoose.connect("mongodb://localhost:27017/ecoderByte")
-} catch (error) {
-    console.log(error)
-}
+mongoose.connect("mongodb://localhost:27017/ecoderByte").
+then(() => console.log("mongodb connected"))
+.catch((err) => console.log(err))
+
+
 app.get('get-user', (req, res) => {
     res.send("get method is hit")
 })
-app.post('/create-user', async(req, res) => {
-    const newUser = await User.create(req.body)
-    if(!newUser) res.send("User Not Foundt!")
-    res.send("User successfully added!")
+
+app.post('/create-user', async (req, res) => {
+    try {
+        const newUser = await User.create(req.body)
+        res.json({
+            message: "User successfully added!",
+            data: newUser
+        })
+    } catch (error) {
+        res.status(500).json({
+            message: "Error saving user",
+            error: error.message
+        })
+    }
 })
+
 app.put('update-user', (req, res) => {
     res.send("put method is hit")
 })
