@@ -11,7 +11,7 @@ then(() => console.log("mongodb connected"))
 .catch((err) => console.log(err))
 
 
-app.get('get-user', (req, res) => {
+app.get('/get-user', (req, res) => {
     res.send("get method is hit")
 })
 
@@ -30,13 +30,16 @@ app.post('/create-user', async (req, res) => {
     }
 })
 
-app.put('update-user', (req, res) => {
-    res.send("put method is hit")
+app.put('/update-user/:id', (req, res) => {
+    const updateUser = req.params.id
+    const oldUser = User.findById(updateUser)
+    if(updateUser == oldUser){
+        
+    }
 })
-app.delete('delete-user', (req, res) => {
+app.delete('/delete-user', (req, res) => {
     res.send("delete method is hit")
 })
-
 
 app.listen(3000, () => {
     console.log("server is running on port 3000")
